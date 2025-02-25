@@ -1,5 +1,5 @@
-ARG BASE_IMAGE=nvidia/cuda:12.1.0-devel-ubuntu22.04
-
+# ARG BASE_IMAGE=nvidia/cuda:12.1.0-devel-ubuntu22.04
+ARG BASE_IMAGE=us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-embeddings-inference-cu122.1-5.ubuntu2204
 FROM $BASE_IMAGE AS base
 SHELL ["/bin/bash", "-c"]
 
